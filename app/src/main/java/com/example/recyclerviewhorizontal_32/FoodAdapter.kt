@@ -21,8 +21,8 @@ class FoodAdapter(private val foodList: List<Food>): RecyclerView.Adapter<FoodAd
 
     override fun onBindViewHolder(holder: FoodViewHolder, position: Int) {
         val food = foodList[position]
-        holder.foodImageView.setImageResource(food.image)
-        holder.foodTextView.text = food.name
+        holder.foodImageView.setImageResource(food.foodImage)
+        holder.foodTextView.text = food.foodName
     }
 
     override fun getItemCount(): Int {
